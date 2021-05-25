@@ -11,9 +11,16 @@
 	<script src="resources/js/jquery-ui.min.js"></script>
 	<script src="resources/js/gsap.min.js"></script>
 	<script src="resources/js/index.js"></script>
+	<script>
+		function goSub1(){
+			$("#mainForm").attr("action", "/goSub1.do");
+			$("#mainForm").submit();
+		}
+	</script>
 </head>
 
 <body>
+<form id="mainForm">
 <div class="bg">
 	<div class="navWrap">
        <div class="nav n1">
@@ -37,7 +44,7 @@
 			<header>
 				<h1>LOGOHERE</h1>
 				<ul>
-					<li><a href="/goSub1.do">ABOUT ME</a></li>
+					<li><a href="#" onclick="goSub1();">ABOUT ME</a></li>
 					<li><a href="/goSub2.do">PORTFOLIO</a></li>
 					<li><a href="">PORCESS</a></li>
 				</ul>
@@ -63,5 +70,6 @@
 		</div>
 	</div>
 </div>
+</form>
 </body>
 </html>
