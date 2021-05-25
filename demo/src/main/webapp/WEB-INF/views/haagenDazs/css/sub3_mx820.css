@@ -1,0 +1,32 @@
+div.hdrWrap {
+    height: 90px;
+}
+div.hdrWrap header{
+	top: 35px;
+}
+div.hdrWrap .logo{
+    width: 25%;
+    height: 80px;
+    position: static;
+    margin-top: -25px;
+}
+div.mnWrap{
+    height: calc(50vh);
+}
+div.mnWrap main h2{
+    font-size: 36px;
+}
+
+
+div.ct1 section{
+    display: block;
+}
+div.ct1 section article{
+    width: calc(100% - 20px);
+}
+div.ct1 section article:nth-child(2){
+    margin-top: 80px;
+}
+div.ct1 section article .texts{
+    padding: 20px 20px 0;
+}

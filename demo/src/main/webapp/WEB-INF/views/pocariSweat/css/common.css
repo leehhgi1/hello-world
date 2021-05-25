@@ -1,0 +1,123 @@
+/*폰트어썸 아이콘*/
+@import url(all.css);
+@import url(xeicon.css);
+
+/*인터넷이 연결되어 있는 상태*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Serif+KR:wght@300;500;700&display=swap');
+
+/*인터넷이 연결되어 있지 않은 상태*/
+/*Noto Sans KR*/
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 100;
+    src: url(../fonts/NotoSansKR-Thin.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 300;
+    src: url(../fonts/NotoSansKR-Light.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 500;
+    src: url(../fonts/NotoSansKR-Medium.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Bold.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 900;
+    src: url(../fonts/NotoSansKR-Black.otf);
+}
+
+/*Noto Serif KR*/
+@font-face{
+    font-family: 'Noto Serif KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 300;
+    src: url(../fonts/NotoSerifKR-Light.otf);
+}
+@font-face{
+    font-family: 'Noto Serif KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 500;
+    src: url(../fonts/NotoSerifKR-Medium.otf);
+}
+@font-face{
+    font-family: 'Noto Serif KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 700;
+    src: url(../fonts/NotoSerifKR-Bold.otf);
+}
+
+body{/*전체적인 문단 설정*/
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    font-size: 14px; line-height: 20px;
+    color: #555;
+	overflow-x: hidden;
+}
+
+/*content*/
+div.content{
+    /*padding: 200px 0;*/
+    padding-top: 200px;
+    overflow-x: hidden;
+}
+div.content header{
+	width: 90%; max-width: 1600px;
+    margin: 0 auto;
+}
+div.content header h2{
+    font-weight: 700; font-size: 72px;
+    line-height: 60px; color: #000;
+}
+div.content header h3{
+    font-weight: 700; font-size: 36px;
+    line-height: 60px; color: #000;
+}
+div.content header h4{
+    font-weight: 700; font-size: 24px;
+    line-height: 40px; color: #000;
+}
+div.content header h5{
+    font-weight: 700; font-size: 18px;
+    line-height: 40px; color: #000;
+}
+div.content header h6{
+    font-weight: 700; font-size: 16px;
+    line-height: 40px; color: #333;
+}
+div.content header p{
+    overflow: hidden;
+}
+div.content section{
+	width: 90%; max-width: 1600px;
+	margin: 0 auto;
+}
+div.content section h2{
+    font-weight: 700; font-size: 72px;
+    line-height: 80px; color: #000;
+}
+div.content section h3{
+    font-weight: 700; font-size: 36px;
+    line-height: 60px; color: #000;
+}
+div.content section h4{
+    font-weight: 700; font-size: 24px;
+    line-height: 40px; color: #000;
+}
+div.content section h5{
+    font-weight: 700; font-size: 18px;
+    line-height: 40px; color: #000;
+}
+div.content section h6{
+    font-weight: 700; font-size: 16px;
+    line-height: 40px; color: #333;
+}
+div.content section p{
+    overflow: hidden;
+}
+div.content section nav{
+    font-size: 30px; line-height: 40px; color: #000;
+}

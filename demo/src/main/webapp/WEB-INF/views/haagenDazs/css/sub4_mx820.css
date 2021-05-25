@@ -1,0 +1,31 @@
+div.hdrWrap {
+    height: 90px;
+}
+div.hdrWrap header{
+	top: 35px;
+}
+div.hdrWrap .logo{
+    width: 25%;
+    height: 80px;
+    position: static;
+    margin-top: -25px;
+}
+div.mnWrap{
+    height: calc(50vh);
+}
+div.mnWrap main h2{
+    font-size: 36px;
+}
+
+
+
+div.ct1 section .btnGroup .btn{}
+div.ct1 section .btnGroup .btn button{
+    width: 140px;
+}
+div.ct1 section .event{
+    display: none;
+}
+div.ct1 section article{
+    width: calc(100% / 2 - 20px);
+}

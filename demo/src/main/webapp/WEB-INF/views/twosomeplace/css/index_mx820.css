@@ -1,0 +1,107 @@
+body{
+	background-color: rgba(90, 51, 102, 0.35);
+}
+div.hdrWrap>.header>h1{
+	width: 90%;
+}
+div.hdrWrap .header h1 a{
+	margin: 0 auto;
+	background-image: url(../img/headerLogoM.jpg);
+}
+div.hdrWrap>.header>.btSearch{
+	float: left;
+}
+div.hdrWrap>.header>.btBars{
+	float: right;
+}
+div.hdrWrap>.header>button{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: transparent;
+	border: 0; color: #fff;
+}
+div.hdrWrap>.header>ul{
+	display: none;
+}
+div.mnWrap>.mnGroup>.mnimg{
+	height: 780px;
+}
+div.mnWrap>.mnGroup>.i1{
+	background-image: url(../img/index_main_i1M.jpg);
+}
+div.mnWrap>.mnGroup>.i2{
+	background-image: url(../img/index_main_i2M.jpg);
+}
+div.mnWrap>.mnGroup>.i3{
+	background-image: url(../img/index_main_i3M.jpg);
+}
+div.mnWrap>.mnGroup>.i4{
+	background-image: url(../img/index_main_i4M.jpg);
+}
+div.mnWrap>.mnGroup>.i5{
+	background-image: url(../img/index_main_i5M.jpg);
+}
+div.noticeWrap>.notice>.art1>.segment>.logo{
+	width: 50%;
+	text-align: right;
+}
+div.noticeWrap>.notice>.art1>.segment>.text{
+	display: none;
+}
+
+div.cnt1>.section>.article{
+	width: calc(100% / 2 - 20px);
+}
+div.cnt1>.section>.article:nth-child(n+3){
+	display: none;
+}
+div.cnt1>.section>.article>p>br{
+	display: none
+}
+div.cnt1>.section>.btnGroup{
+	width: 80%;
+}
+
+div.cnt2{
+	background-position: 30% center;
+}
+div.cnt2>.section>.article>.segment>h2{
+	text-align: center;
+}
+div.cnt2>.section>.article>.segment>p{
+	text-align: center;
+	padding: 0 23px;
+}
+div.cnt2>.section>.article>.segment>p>br{
+	display: none;
+}
+div.cnt2>.section>.article>.segment>.btn{
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 40px;
+}
+div.cnt2>.section>.article>.segment>.btn>button{
+	width: 100%;
+	float: none;
+	font-size: 16px;
+}
+div.cnt2>.section>.article>.segment>.btn>button:nth-child(1){
+    margin-right: 0px;
+}
+div.cnt2>.section>.article>.segment>.btn>button:nth-child(2){
+    margin:0px; margin-top: 20px;
+}
+div.cnt2>.section>.article>.segment>.btn>button:nth-child(3){
+    margin:0px; margin-top: 20px;
+}
+
+div.cnt3>.section>.article>.i1{
+	margin-left: -100px;
+}
+div.ftrWrap>.section>p{
+    width: 610px;
+    height: 40px;
+    float: left;
+    margin-left: 60px;
+}

@@ -1,0 +1,106 @@
+div.hdrWrap {
+    height: 90px;
+}
+div.hdrWrap header{
+	top: 35px;
+}
+div.hdrWrap .logo{
+    width: 25%;
+    height: 80px;
+    position: static;
+    margin-top: -25px;
+}
+div.hdrWrap header .logo a{
+    width: 120%;
+}div.mnWrap{
+    height: calc(50vh);
+}
+div.mnWrap main h2{
+    font-size: 36px;
+}
+
+div.ct1{}
+div.ct1 section{
+    display: block;
+}
+div.ct1 section article{
+    width: calc(100% - 20px);
+    height: auto;
+    /*outline: 1px solid #f00;*/
+    position: relative;
+}
+div.ct1 section article:last-child{
+    width: calc(100% - 20px);
+    height: 320px;
+    margin-top: 20px;
+}
+
+div.ct1 section article .image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+div.ct1 section .art .texts{
+    padding: 40px;
+    position: absolute;
+    margin: auto;
+}
+div.ct1 section article .texts h2{
+    line-height: 60px; font-size: 36px; color: #fff;
+    /*text-shadow: 0px 0px 3px rgba(0,0,0,1);*/
+}
+div.ct1 section article:nth-child(2) .texts{
+    width: calc((100% / 8) * 5); height: 320px;
+    padding: 40px 40px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 10%, transparent 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s;
+    background-position: left;
+}
+div.ct1 section article:nth-child(2) .texts:hover{ 
+    background-size: 100% 100%;
+}
+
+
+div.ct2{}
+div.ct2 header{
+    text-align: center;
+}
+div.ct2 section{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.ct2 section article{
+    width: calc(100% / 4 - 20px);
+}
+div.ct2 section article:nth-child(n+5){
+    margin-top: 40px;
+}
+div.ct2 section article .image{
+    height: 240px; /*background-color: #ccc;*/
+    background-size: 100%;
+}
+div.ct2 section article .texts{
+    text-align: center;
+}
+div.ct2 section article .texts h4{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+}
+div.ct2 section article .texts p{
+    height: 80px;
+    /*padding: 10px 20px 0px;*/
+    padding: 0;
+    text-overflow: ellipsis;
+}
+div.ct2 section article .texts p br{
+    display: none;
+}
+div.ct2 section article .texts h5{
+    /*outline: 1px solid #f00;*/ font-size: 14px;
+}

@@ -1,0 +1,190 @@
+/*index_mx420.css*/
+/*body{
+	background-color: rgba(51, 102, 51, 0.29);
+}*/
+
+div.hdrWrap>.header{
+	overflow: visible;
+}
+div.hdrWrap>.header>.logo{
+	position: relative;
+}
+div.hdrWrap>.header>ul{
+    display: none;
+}
+/*header-end*/
+/*menu_start*/
+div.menuWrap>.menu>ul{
+    overflow: hidden;
+    position: relative;
+    width: 100%; 
+    margin: auto;
+    left: 0; right: 0;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.menuWrap>.menu{
+	height: 40px;
+}
+div.menuWrap>.menu>.sns{
+	display: none;
+}
+/*menu_end*/
+/*mnWrap_start*/
+div.mnWrap>.main>h3{
+    
+}
+div.mnWrap>.main>.image{
+	width: 100%;
+}
+div.mnWrap>.main>.image>h2{
+	font-size: 32px;
+	line-height: 60px;
+    bottom: 10px; left: 70px;
+    width: 650px; height: 70px;
+}
+/*mnWrap_end*/
+div.content{
+    padding: 80px 0;
+} 
+div.content>.header>h2{
+    line-height: 40px;
+	font-size: 28px;
+	text-align: center;
+}
+div.content>.header>h4{
+    line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 20px;
+}
+/*ct1_start*/
+div.cnt1>.section>.article>.image{
+    width: 100%; margin: 0;
+    height: 300px;
+    float: none;
+}
+div.cnt1>.section>.article:nth-of-type(2)>.image{
+	height: 300px;
+	width: 100%; margin: 0;
+	float: none;
+}
+div.cnt1>.section>.article>.segment{
+	float: none; margin: 0;
+	padding: 0 20px; text-align: center;
+	margin-top: 20px;
+}
+div.cnt1>.section>.article:nth-of-type(2)>.segment{
+	width: 100%; margin: 0;
+	float: none;
+}
+div.cnt1>.section>.article:nth-of-type(2)>.segment>p{
+	margin-top: 0; text-align: center;
+	padding: 0;
+	margin-top: 20px;
+}
+div.cnt1>.section>.article>.image>.btn{
+   float: none; text-align: right;
+	padding-top: 240px; 
+	padding-right: 20px;
+}
+/*ct1_end*/
+/*ct2_start*/
+div.cnt2>.section>.article{
+	float: none; margin: 0;
+	width: 100%;
+}
+div.cnt2>.section>.article:nth-child(2){
+	float: none; margin: 0;
+	width: 100%;
+	margin-top: 20px;
+}
+div.cnt2>.section>.article>.segment{
+    padding: 25px; margin-top: -170px;
+	white-space: normal;
+}
+div.cnt2>.section>.article>.segment>p{
+    height: 120px; overflow: hidden; color: #fff; text-align: center;
+}
+div.cnt2>.section>.article>.segment>p>br{
+	display: none;
+}
+/*ct2_end*/
+/*ct3_start*/
+div.cnt3>.section>.article>.image{
+    width: 100%; margin: 0px;
+    height: 360px;
+}
+div.cnt3>.section>.art1>.segment{
+    width: 100%; margin: 0px;
+	margin-top: 20px;
+}
+div.cnt3>.section>.art1>.segment>p{
+    height: 80px; text-align: center;
+}
+div.cnt3>.section>.article:nth-of-type(2)>.image{
+	width: 100%; margin: 0px;
+    height: 200px; float: none;
+}
+div.cnt3>.section>.art2>.segment{
+	width: 100%; margin: 0px;
+	margin-top: 20px;
+	text-align: center;
+    padding-top: 0px; margin-top: 20px;
+	float: none;
+}
+div.cnt3>.section>.art1>.segment>p>br{
+	display: none;
+}
+div.cnt3>.section>.art2>.segment>p>br{
+	display: block;
+}
+/*ct3_end*/
+/*content4*/
+div.cnt4>.section>.article>.image{
+    margin: 0;
+    height: 150px;
+}
+div.cnt4>.section>.article:first-child>.segment{
+    width: 100%;margin: 0; padding: 20px;
+}
+div.cnt4>.section>.article:first-child>.segment>p{
+    color: #000; text-align: center;
+}
+div.cnt4>.section>.article:nth-child(2)>.image{
+    width: 100%; height: 220px;
+    float: none;
+}
+div.cnt4>.section>.article:nth-child(2)>.segment{
+    width: 100%; float: none;
+    padding-top: 20px; margin: 0;
+	text-align: center;
+}
+/*content4 end*/
+
+div.ftrWrap>.footer{
+    text-align: center;
+}
+div.ftrWrap>.footer>.logo{
+	width: 20%; height: 60px;
+    float: none;
+    display: inline-block;
+}
+div.ftrWrap>.footer>.nav{
+    width: 100%; 
+    /*background-color: #ccc;*/
+    float: left;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+div.ftrWrap>.footer>.nav>dl{
+    width: 100%;
+    float:none;
+    text-align: center;
+    text-transform: uppercase;
+}
+div.ftrWrap>.footer>.nav>dl>dt{}
+div.ftrWrap>.footer>.nav>dl>dd{
+    display: none;
+}

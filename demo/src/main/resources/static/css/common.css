@@ -1,0 +1,446 @@
+/*폰트어썸 아이콘*/
+@import url(all.css);
+@import url(xeicon.css);
+
+/*인터넷이 연결되어 있는 상태*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Serif+KR:wght@300;500;700&display=swap');
+
+/*인터넷이 연결되어 있지 않은 상태*/
+/*Noto Sans KR*/
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 100;
+    src: url(../fonts/NotoSansKR-Thin.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 300;
+    src: url(../fonts/NotoSansKR-Light.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 500;
+    src: url(../fonts/NotoSansKR-Medium.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Bold.otf);
+}
+@font-face{
+    font-family: 'Noto Sans KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 900;
+    src: url(../fonts/NotoSansKR-Black.otf);
+}
+
+/*Noto Serif KR*/
+@font-face{
+    font-family: 'Noto Serif KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 300;
+    src: url(../fonts/NotoSerifKR-Light.otf);
+}
+@font-face{
+    font-family: 'Noto Serif KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 500;
+    src: url(../fonts/NotoSerifKR-Medium.otf);
+}
+@font-face{
+    font-family: 'Noto Serif KR'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 700;
+    src: url(../fonts/NotoSerifKR-Bold.otf);
+}
+
+/*ImcreSoojin OTF*/
+@font-face{
+    font-family: 'ImcreSoojin'; /*'유저가 원하는 이름으로 사용가능'*/
+    font-weight: 300;
+    src: url(../fonts/ImcreSoojin-OTF.otf);
+}
+
+/*전체문단이 아닌건 따로 설정하는것이 좋음*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans KR';
+}
+
+html, body{
+    height: 100%;
+}
+body{
+	font-family: 'Noto Sans KR';
+    font-weight: 300;
+    font-size: 14px; line-height: 20px;
+    color: #555;
+    overflow-y: hidden;
+}
+div.bg{
+    width: 100%;
+    background: linear-gradient(
+    to bottom right,  
+    #fe676e, #ffdca2,
+    #ffbd71, #fd8f52,
+	#fd8f52, #ffdca2,
+    #fe676e, #ffbd71);
+    background-repeat: no-repeat;
+    background-size: 1000% 1000%;
+    animation: gradient 240s ease infinite;
+}
+@keyframes gradient{ 
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+div.page{
+    width: 100%;
+    height: 100vh;
+	min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*nav-start*/
+div.navWrap {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	z-index: 9999;
+	top: -100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+div.navWrap .nav{
+	width: 25%;
+	height: 100%;
+	background-color: #ccc;
+	position: relative;
+	top: -100%;
+}
+div.navWrap .n1{
+	background-color: #fd5252;
+}
+div.navWrap .n2{
+	background-color: #fd8f52;
+}
+div.navWrap .n3{
+	background-color: #ffdca2;
+}
+div.navWrap .n4{
+	background-color: #ffbd71;
+}
+div.navWrap .nav h3{
+	/*width: 100%;*/
+	font-family: 'ImcreSoojin';
+	font-size: 36px; font-weight: 700;
+	color: #000;
+	line-height: 100vh;
+	text-align: center; line-height: 100vh;
+}
+
+div.navWrap .nav a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+div.navWrap .btClose{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+	font-size: 24px;
+}
+/*nav-end*/
+
+div.hdrWrap{
+	width: 100%;
+	max-width: 1440px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed; margin: auto;
+	left: 0; right: 0; top: 120px;
+	flex-wrap: wrap;
+}
+div.hdrWrap header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.hdrWrap header h1{
+    font-size: 24px; 
+	line-height: 40px;
+    color: #000;
+	width: 230px;
+	text-align: center;
+}
+div.hdrWrap header h4{
+	width: 100px;
+	text-align: right;
+	font-family: 'ImcreSoojin';
+    font-size: 16px;
+    line-height: 40px; color: #fd6c6a;
+	text-transform: uppercase;
+	margin-left: auto;
+}
+div.hdrWrap header .bars{
+    font-size: 24px; line-height: 40px;
+    color: #000;
+	width: 100px;
+	text-align: center;
+}
+div.mouseW{
+	/*height: 60px;
+	width: 90px;
+	margin-left: auto;
+	padding-top: 300px;*/
+	width: 87px; height: 60px;
+	position: absolute;
+	margin: auto;
+	right: 0; top: 350px;
+}
+
+div.content{
+    width: 1440px;
+	height: 800px; /*다 만들면 지우기*/
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    color: #fff; font-size: 72px;
+	margin: 0 auto;
+	padding: 120px 0;
+}
+div.content header{
+	width: 90%;
+	max-width: 1220px;
+	margin: 0 auto;
+}
+div.content section{
+	width: 90%;
+	max-width: 1220px;
+	margin: 0 auto;
+	/*background-color: #06f;*/
+}
+div.content h1{
+	font-size: 48px; font-weight: 300;
+	color: #000; line-height: 40px;
+}
+div.content h2{
+	font-size: 36px; font-weight: 300;
+	color: #000; line-height: 40px;
+}
+div.content h3{
+	font-size: 24px; font-weight: 300;
+	color: #000; line-height: 40px;
+}
+div.content h4{
+	font-size: 18px; font-weight: 300;
+	color: #000; line-height: 40px;
+}
+div.content h5{
+	font-family: 'ImcreSoojin';
+	font-size: 16px; font-weight: 300;
+	color: #000; line-height: 40px;
+}
+div.content h6{
+	font-size: 12px; font-weight: 300;
+	color: #000; line-height: 40px;
+}
+div.content p{
+	font-size: 14px; font-weight: 300;
+	color: #000; line-height: 20px;
+	overflow: hidden;
+}
+div.content .list{
+	margin-top: 40px;
+}
+div.content section dl{
+	display: flex; text-transform: uppercase;
+}
+div.content section dt{
+	font-family: 'ImcreSoojin';
+	font-size: 16px; font-weight: 700;
+	color: #fd6c6a;line-height: 40px;
+	width: 220px;
+}
+div.content section dd{
+	font-family: 'ImcreSoojin';
+	font-size: 14px; line-height: 40px;
+	color: #666;
+}
+div.content .btns{
+	margin-top: 80px;
+	display: flex;
+}
+div.content .btns button{
+	font-family: 'ImcreSoojin';
+	width: 200px; height: 40px;
+	font-size: 16px; color: #fd6c6a;
+	border-radius: 20px; border: 2px solid #fd6c6a;
+	background-color: transparent;
+	margin-right: 40px;
+}
+
+/*footer*/
+div.ftrWrap{
+	width: 90%;
+	max-width: 1440px;
+    /*padding: 40px 0;*/
+	position: fixed;
+	margin: auto;
+	left: 0; right: 0; bottom: 120px;
+}
+div.ftrWrap .pagenation{
+	width: 100px; height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed; margin: auto;
+	left: 0;right: 0; bottom: 120px;
+	/*outline: 1px solid #f00;*/
+}
+div.ftrWrap .pagenation li{
+	width: 20px; height: 20px;
+	background-color: #fff;
+	border: 2px solid #fd6c6a;
+	border-radius: 10px;
+	transition: width 0.3s;
+}
+div.ftrWrap .pagenation .clicked{
+	width: 40px;
+}
+
+
+
+
+
+.mouseW span
+{
+  display: block;
+  width: 8px;
+  height: 8px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 3px solid #fd6c6a;
+  border-bottom: 3px solid #fd6c6a;
+  /*margin: 0 0 3px 6px;*/
+  margin: 0 auto;
+}
+
+.mouseW .unu
+{
+  margin-top: 6px;
+}
+
+.mouseW .unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.mouseW .unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouseW .doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouseW .trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouseW .mouse
+{
+	height: 30px;
+	width: 20px;
+	border-radius: 10px;
+	transform: none;
+	border: 3px solid #fd6c6a;
+	top: 170px;
+	margin: 0 auto;
+}
+
+.mouseW .wheel
+{
+  height: 6px;
+  width: 3px;
+  display: block;
+  margin: 2.5px auto;
+  background: #fd6c6a;
+  position: relative;
+}
+
+.mouseW .wheel
+{
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}

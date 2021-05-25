@@ -1,0 +1,177 @@
+/*sub2_mx820.css*/
+/*body{
+	background-color: rgba(51, 102, 51, 0.29);
+}*/
+div.menuWrap>.menu>.sns{
+    float: right; margin: 5px 0;
+    overflow: hidden;
+}
+div.menuWrap>.menu>.sns>input{
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    width: 30px;
+    transition: width 0.5s;
+}
+div.menuWrap>.menu>.sns>input:focus{
+	width: 100px;
+    text-indent: 20px;
+}
+div.menuWrap>.menu>.sns>button{
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    text-indent: -8px;
+}
+
+/*메인이미지*/
+div.mnWrap{
+    background-size: auto 600px;
+    background-repeat: no-repeat;
+}
+div.mnWrap>.main>.image{   
+    height: 650px;
+	bottom: 160px;
+}
+div.mnWrap>.main>h3{
+	line-height: 500px; 
+	color: #000;
+	height: 800px;
+}
+div.mnWrap>.main>.image>h2{
+    font-size: 32px;
+	line-height: 60px;
+    bottom: 0; left: 120px;
+    width: 650px; height: 70px;
+}
+div.mnWrap>.main>.image>.i1{
+    width: 450px; height: 650px;
+}
+/*메인이미지 end*/
+
+/*content1*/
+div.cnt1>.section>.article>.image{
+    height: 240px;
+}
+div.cnt1>.section>.article:nth-of-type(2)>.image{height: 240px;
+}
+div.cnt1>.section>.article:nth-of-type(2)>.segment>p{
+	height: 120px;
+	margin-top: 120px;
+}
+div.cnt1>.section>.article>.image>.btn{
+   float: right; 
+	padding-top: 180px;
+	padding-right: 20px;
+}
+/*content1 end*/
+
+/*content2*/
+div.cnt2>.section>.article>.image{
+   height: 600px; 
+}
+div.cnt2>.section>.article:nth-of-type(2){
+    padding-top: 0px;
+}
+div.cnt2>.section>.article>.segment{
+    padding: 20px; margin-top: -140px;
+	white-space: nowrap;
+}
+/*content2 end*/
+
+/*content3*/
+div.cnt3>.section>.article>.image{
+    width: 60%; margin: 0 10px;
+    height: 360px;
+}
+div.cnt3>.section>.art1>.segment{
+    width: 34%;
+}
+div.cnt3>.section>.art1>.segment>p{
+    height: 120px;
+}
+div.cnt3>.section>.article:nth-of-type(2)>.image{
+	width: calc(100% / 12 * 7 - 20px);
+	height: 240px;
+	margin-top: 20px;
+}
+div.cnt3>.section>.article:nth-of-type(2)>.segment>p{
+    padding: 0px; 
+}
+div.cnt3>.section>.art1>.image>div{
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+    height: 160px;
+    background-color: #000;
+    float: left; 
+}
+div.cnt3>.section>.art2>.segment{
+    width: 38%;
+    float: right; 
+	text-align: right;
+    padding-top: 160px; margin: 0 10px;
+}
+
+div.cnt3>.section>.art1>.segment>p>br{
+	display: none;
+}
+div.cnt3>.section>.art2>.segment>p>br{
+	display: none;
+}
+/*content3 end*/
+
+/*content4*/
+div.cnt4>.section>.article>.image{
+    margin: 0 10px;
+    height: 260px; background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.cnt4>.section>.article:first-child>.segment{
+    width: 50%;
+}
+div.cnt4>.section>.article:nth-child(2)>.image{
+    width: calc(100% / 12 * 8 - 20px); height: 220px;
+    float: left;
+}
+div.cnt4>.section>.article:nth-child(2)>.segment{
+    width: calc(100% / 12 * 4 - 20px); float: left;
+    padding-top: 100px; margin: 0 10px;
+}
+div.cnt4>.section>.article>.image>.btn{
+    float: right; 
+	padding: 160px 20px 0;
+}
+/*content4 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.ftrWrap>.footer>.logo{
+	width: 60px; height: 60px;
+}
+div.ftrWrap>.footer>.nav{
+    width: 640px; 
+    /*background-color: #ccc;*/
+    float: right;
+}
+div.ftrWrap>.footer>.nav>dl{
+	width: calc(100% / 4);
+    margin: auto;
+}

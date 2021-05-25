@@ -1,0 +1,115 @@
+div.hdrWrap {
+    height: 90px;
+}
+div.hdrWrap header{
+	top: 35px;
+}
+div.hdrWrap .logo{
+    width: 25%;
+    height: 80px;
+    position: static;
+    margin-top: -25px;
+}
+div.mnWrap{
+    height: calc(50vh);
+}
+div.mnWrap main h2{
+    font-size: 24px;
+}
+div.ct1 header p{
+    width: 95%;
+    margin: 0 auto;
+}
+div.ct1 section{
+    flex-wrap: wrap;
+}
+div.ct1 section article{
+    width: calc(100% / 2 - 40px);
+}
+div.ct1 section article:nth-child(n+3){
+    margin-top: 40px;
+}
+div.ct1 section article .texts{
+    margin-top: -80px;
+}
+
+div.ct2 section header h3 {
+    /*line-height: 40px;*/
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+div.ct2 section header nav h4 {
+    line-height: 40px;
+    margin-top: 0;
+}
+
+div.ct2 section header p {
+    height: 60px;
+}
+
+div.ct2 section header .btn {
+    padding: 100px 0;
+}
+
+div.ct2 section header .btn a::after {
+    bottom: 105px;
+}
+div.ct2 section .swiper-wrapper {
+    width: calc(280%);
+}
+
+div.ct2 section .swiper-container::after {
+    left: 182px;
+}
+
+div.ct3 section article .texts{
+    width: calc((100% / 12) * 6 - 10px);
+    /*outline: 1px solid #f00;*/
+}
+div.ct3 section article:nth-child(3) .texts h2 br{
+    display: none;
+}
+
+div.ct3 section article .imgGroup{
+    width: calc(50% - 10px); height: 500px;
+    /*outline: 1px solid #f00;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+div.ct3 section article .imgGroup .image{
+    width: 100%; /*outline: 1px solid #66f;*/
+    height: calc(40% - 10px);
+}
+div.ct3 section article .imgGroup .smallImg{
+    width: 100%;
+    /*outline: 1px solid #363;*/
+    height: calc(60% - 10px);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: flex-end;
+    margin-top: auto;
+}
+div.ct3 section article .imgGroup .smallImg .image{
+    /*height: calc(50% - 10px);*/
+    width: calc(50% - 10px); height: 100%;
+    /*outline: 1px solid #f00;*/
+}
+
+div.ct3 section article .texts ul li {
+    margin-right: 10px;
+    line-height: 60px;
+}
+
+div.ct3 section article .texts p {
+    width: 100%;
+    margin-top: 20px;
+}
+div.ct4 section article p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px;
+}

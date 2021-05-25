@@ -1,0 +1,56 @@
+/*sub1_mx820.css*/
+/*body{
+	background-color: rgba(51, 102, 51, 0.29);
+}*/
+div.menuWrap>.menu>.sns{
+    float: right; margin: 5px 0;
+    overflow: hidden;
+}
+div.menuWrap>.menu>.sns>input{
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    width: 30px;
+    transition: width 0.5s;
+}
+div.menuWrap>.menu>.sns>input:focus{
+	width: 100px;
+    text-indent: 20px;
+}
+div.menuWrap>.menu>.sns>button{
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    text-indent: -8px;
+}
+
+div.cnt1>.section>.article{
+    width: calc(100% / 3 - 30px);
+	margin: 0 22px;
+}
+
+div.cnt2>.section>.article>div{
+    height: 210px;
+}
+div.cnt2>.section>.article>.image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.cnt2>.section>.article>.segment{
+	padding: 0;
+}
+div.cnt2>.section>.article>.segment>p{
+	margin:0;
+}
+
+div.ftrWrap>.footer>.logo{
+	width: 60px; height: 60px;
+}
+div.ftrWrap>.footer>.nav{
+    width: 640px; 
+    /*background-color: #ccc;*/
+    float: right;
+}
+div.ftrWrap>.footer>.nav>dl{
+	width: calc(100% / 4);
+    margin: auto;
+}

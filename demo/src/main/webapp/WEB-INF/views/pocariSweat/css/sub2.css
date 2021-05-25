@@ -1,0 +1,411 @@
+body{
+	display: flex;
+}
+div.header{
+	width: 320px; height: 100vh;
+	background-color: #005eb8;
+	padding: 40px;
+	position: fixed;
+}
+div.header .logo{
+	width: 160px; height: 100px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.header .logo a{
+    display: block;
+    width: 100%; height: 100%;
+    margin: 0 auto;
+    /*outline: 1px solid #06f;*/
+}
+div.header .nav{
+	color: #fff;
+	height: 590px;
+	padding-top: 160px;
+}
+div.header .nav li{}
+div.header .nav li h2{
+	font-weight: 700; font-size: 18px;
+	line-height: 40px;
+	cursor: pointer;
+	padding: 0 20px;
+	color: #b4daff;
+	transition: color 0.4s;
+}
+div.header .nav li h2:hover{
+	color: #fff;
+}
+div.header .nav li h2.clicked{
+	color: #fff;
+}
+div.header .nav li ul{
+	display: none;
+}
+div.header .nav li ul li{
+	list-style: inside;
+	font-family: 'Noto Sans KR'; font-weight: 700;
+	font-size: 16px; line-height: 40px; cursor: pointer;
+	background-color: transparent;
+	padding: 0 30px; color: #dceeff;
+}
+div.header .footer{
+	font-family: 'Noto Sans KR';
+	color: #fff; font-size: 14px;
+	padding-top: 40px;
+	position: relative;
+}
+div.header .footer::before{
+	display: block;
+	content: '';
+	position: absolute;
+	margin: auto;
+	left: -40px; right: 0;
+	width: 320px;
+	border-bottom: 2px solid #fff;
+	margin-top: -40px;	
+}
+div.header .footer input{
+	float: left;
+    height: 40px;
+    border: 1px solid #fff;
+	background-color: transparent;
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+    width: 210px;
+}
+div.header .footer input:focus{
+    text-indent: 30px;
+	caret-color: #fff;
+	color: #fff;
+}
+div.header .footer button{
+	height: 40px;
+    width: 30px;
+    border-radius: 0 20px 20px 0;
+	background: transparent;
+    border: 1px solid #fff;
+    border-left: 0;
+    text-indent: -8px;
+    cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+}
+div.header .footer .info{
+	margin-top: 40px;
+}
+div.header .footer p{
+	margin: 20px 0;
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+}
+div.wrapper{
+	width: calc(100% - 320px);
+	margin-left: auto;
+}
+div.mnWrap{
+	width: 100%;
+	height: calc(100vh);
+    align-items: center;
+	position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/sub2_main_bg.jpg);
+}
+div.mnWrap main{
+    width: 90%;
+    max-width: 1440px;
+	margin: 0 auto;
+    color: #fff;
+	align-items: center;
+}
+div.mnWrap main .texts{
+	width: calc(50% - 20px);
+    height: 120px;
+    text-align: right;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+}
+div.mnWrap main h2{
+    font-weight: 100; font-size: 36px; 
+	line-height: 60px;
+	color: #fff;
+}
+div.mnWrap main h2 span{
+    font-weight: 700; color: #026cda;
+}
+/*------------------------------------------------------*/
+
+/*ct1*/
+div.ct1{}
+div.ct1 header{}
+div.ct1 header h3{
+    /*color: 000;*/
+    margin-left: 10px;
+}
+div.ct1 header h3::after{
+    display: block;
+    content: '';
+    width: 40px; border-bottom: 2px solid #005eb8;
+    margin-top: 20px;
+}
+div.ct1 header h5{
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+div.ct1 section{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+div.ct1 section article{
+    width: calc(100% / 4 - 20px);
+    position: relative;
+    overflow: hidden;
+}
+div.ct1 section article .image{
+    height: 320px;
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.ct1 section article .i1{
+    background-image: url(../img/sub2_ct1_i1.jpg);
+}
+div.ct1 section article .i2{
+    background-image: url(../img/sub2_ct1_i2.jpg);
+}
+div.ct1 section article .i3{
+    background-image: url(../img/sub2_ct1_i3.jpg);
+}
+div.ct1 section article .i4{
+    background-image: url(../img/sub2_ct1_i4.jpg);
+}
+div.ct1 section article .texts{
+    width: 100%; height: 320px;
+    background-color: rgba(66, 151, 232, 0.62);
+    text-align: center;
+    padding: 80px 40px;
+    position: absolute;
+    top: 320px;
+    transition: top 0.5s;
+}
+div.ct1 section article:hover .texts{
+    top: 0;
+}
+div.ct1 section article .texts h6{
+    color: #fff;
+}
+div.ct1 section article .texts p{
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #fff;
+}
+
+/*ct2*/
+div.ct2{
+	padding-top: 200px;
+}
+div.ct2 header{
+	text-align: center;
+}
+div.ct2 header h3{
+	font-weight: 300;
+}
+div.ct2 header h3 span{
+	font-weight: 700;
+	color: #0a62b9;
+}
+div.ct2 section{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 120px;
+}
+div.ct2 section .mainImg{
+	width: calc(50% - 20px);
+	height: 480px;
+	position: relative;
+}
+div.ct2 section .mainImg .image{
+	width: 100%; height: 480px;
+	background-color: #ccc;
+	position: absolute;
+	opacity: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s;
+}
+div.ct2 section .mainImg .image.selected{
+	opacity: 1;
+}
+div.ct2 section .mainImg .i1{background-image: url(../img/sports_sl1_1.jpg);}
+div.ct2 section .mainImg .i2{background-image: url(../img/sports_sl1_2.jpg);}
+div.ct2 section .mainImg .i3{background-image: url(../img/sports_sl1_3.jpg);}
+div.ct2 section .rMain{
+	width: calc(50% - 20px);
+}
+div.ct2 section .rMain h4{
+	line-height: 80px;
+	font-weight: 300; padding-left: 10px;
+	background: linear-gradient(#005eb8 0%, #005eb8 100%);
+    background-size: 0.5% 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+div.ct2 section .rMain h4 span{
+	font-weight: 700; color: #4a8dd0;
+}
+div.ct2 section .rMain .pView{
+	width: calc(100% / 6 * 4);
+	overflow: hidden;
+	/*outline: 1px solid #f00;*/
+	padding-left: 10px;
+	margin-top: 40px;
+}
+div.ct2 section .rMain .pView .pGroup{
+	width: 300%;
+	display: flex;
+	margin-left: 0%;
+}
+div.ct2 section .rMain .pView .pGroup article{
+	width: 33.33%; position: relative;
+}
+div.ct2 section .rMain .pView .pGroup article p{
+	width: 400px; height: 140px;
+}
+div.ct2 section .rMain .pView .pGroup article h2{
+    font-family: 'Noto Serif KR'; font-weight: 500;
+    font-size: 60px; color: rgba(0, 0, 0, 0.05);
+    line-height: 60px;
+    position: absolute; margin: auto;
+    bottom: 0px;
+}
+div.ct2 section .rMain .imgGroup{
+	display: flex;
+	justify-content: space-between;
+	height: 220px;
+	align-items: flex-end;
+}
+div.ct2 section .rMain .imgGroup .image{
+	width: calc(100% / 3 - 10px);
+	height: 200px; background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.ct2 section .rMain .imgGroup .i1{background-image: url(../img/sports_sl1_1.jpg);}
+div.ct2 section .rMain .imgGroup .i2{background-image: url(../img/sports_sl1_2.jpg);}
+div.ct2 section .rMain .imgGroup .i3{background-image: url(../img/sports_sl1_3.jpg);}
+
+
+
+/*ct3*/
+div.ct3{
+	padding: 200px 0;
+}
+div.ct3 header{
+	text-align: center;
+}
+div.ct3 header h3{
+	font-weight: 300;
+}
+div.ct3 header h3 span{
+	font-weight: 700;
+	color: #0a62b9;
+}
+div.ct3 section{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 120px;
+}
+div.ct3 section .mainImg{
+	width: calc(50% - 20px);
+	height: 480px;
+	position: relative;
+}
+div.ct3 section .mainImg .image{
+	width: 100%; height: 480px;
+	background-color: #ccc;
+	position: absolute;
+	opacity: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s;
+}
+div.ct3 section .mainImg .image.selected{
+	opacity: 1;
+}
+div.ct3 section .mainImg .i1{background-image: url(../img/sports_sl2_1.jpg);}
+div.ct3 section .mainImg .i2{background-image: url(../img/sports_sl2_2.jpg);}
+div.ct3 section .mainImg .i3{background-image: url(../img/sports_sl2_3.jpg);}
+div.ct3 section .lMain{
+	width: calc(50% - 20px);
+}
+div.ct3 section .lMain h4{
+	line-height: 80px; text-align: right;
+	font-weight: 300; padding-right: 10px;
+	background: linear-gradient(#005eb8 0%, #005eb8 100%);
+    background-size: 0.5% 30px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+div.ct3 section .lMain h4 span{
+	font-weight: 700; color: #4a8dd0;
+}
+div.ct3 section .lMain .pView{
+	width: calc(100% / 6 * 4);
+	overflow: hidden;
+	/*outline: 1px solid #f00;*/
+	padding-right: 10px;
+	margin-top: 40px;
+    direction: rtl;
+    margin-left: auto;
+}
+div.ct3 section .lMain .pView .pGroup{
+	width: 300%;
+	display: flex;
+    /*outline: 1px solid #f00;*/
+    margin-right: 0%;
+}
+div.ct3 section .lMain .pView .pGroup article{
+	width: 33.33%;
+    position: relative;
+}
+div.ct3 section .lMain .pView .pGroup article p{
+	width: 400px; height: 140px;
+    text-align: right;
+    margin-left: auto;
+    direction: ltr;
+}
+div.ct3 section .lMain .pView .pGroup article h2{
+    font-family: 'Noto Serif KR'; font-weight: 500;
+    font-size: 60px; color: rgba(0, 0, 0, 0.05);
+    line-height: 60px;
+    position: absolute; margin: auto;
+    bottom: 0px;
+}
+div.ct3 section .lMain .imgGroup{
+	display: flex;
+	justify-content: space-between;
+	height: 220px;
+	align-items: flex-end;
+    direction: rtl;
+}
+div.ct3 section .lMain .imgGroup .image{
+	width: calc(100% / 3 - 10px);
+	height: 200px; background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.ct3 section .lMain .imgGroup .i1{background-image: url(../img/sports_sl2_1.jpg);}
+div.ct3 section .lMain .imgGroup .i2{background-image: url(../img/sports_sl2_2.jpg);}
+div.ct3 section .lMain .imgGroup .i3{background-image: url(../img/sports_sl2_3.jpg);}
+

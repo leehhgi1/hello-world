@@ -1,0 +1,246 @@
+/*common.css  문자 글꼴 관련 속성들 저장*/
+@import url('all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 100;/*lighter*/
+    src : url(../fonts/NotoSansKR-Thin.otf) format('otf');
+}
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 300;/*nomal*/
+    src : url(../fonts/NotoSansKR-Light.otf) format('otf');
+}
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 700;/*bold*/
+    src : url(../fonts/NotoSansKR-Bold.otf) format('otf');
+}
+@font-face{
+    font-family:"Noto Sans KR";
+    font-weight: 900;/*bolder*/
+    src : url(../fonts/NotoSansKR-Black.otf) format('otf');
+}
+
+body{
+    /*font-family: "Noto Sans KR", "돋움", "Sans-serif";*/
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+*.clear::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+/*탑메뉴*/
+div.menuWrap{
+    background-color: #3b383a;
+}
+div.menuWrap .menu{
+    /*width: 1060px;*/
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+div.menuWrap .menu li{
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFF;
+    line-height: 40px;
+}
+/*글로벌 헤더*/
+div.hdrWrap{
+    background-color: #9a0419;
+    padding: 20px 0;
+}
+div.hdrWrap .header{
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+div.hdrWrap .header h1{
+    font-size: 36px;
+    color: #FFF;
+    line-height: 40px;
+}
+div.hdrWrap .header h1 a{
+    display: block;
+    width: 250px;
+    height: 40px;
+    background-image: url(../img/headerLogo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: #FC0;*/
+}
+div.hdrWrap .header li{
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+    line-height: 40px;
+    color: #FFF;
+}
+div.hdrWrap>.header>ul>li::after{
+    display: block; content: '';
+    width: 0; height: 4px;
+    background-color: #fff;
+    margin-top: -4px;
+    float: right;
+    transition: width 0.3s;
+}
+div.hdrWrap>.header>ul>li:hover::after{
+    /*border-bottom:  4px solid #fff;*/
+    width: 100%;
+    float: left;
+}
+/*메인*/
+/*div.noticeWrap .notice{
+    background-color: #F00;
+}
+div.noticeWrap>.notice .article{
+    background-color: #000;
+    padding: 20px 0;
+}*/
+div.noticeWrap .notice h3{
+    font-size: 18px;
+    /*font-size: 1.5vw;*/
+    font-weight: 700;
+    line-height: 40px;
+}
+div.noticeWrap .notice p{
+    font-size: 14px;
+    /*font-size: 1.2vw;*/
+    font-weight: 300;
+    line-height: 40px;
+}
+div.noticeWrap .notice menu{
+    font-size: 18px;
+    /*font-size: 1.5vw;*/
+    line-height: 40px;
+}
+
+/*글로벌 컨텐츠*/
+div.content{
+    padding: 120px 0;
+}
+div.content .header{}
+div.content .header h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    line-height: 80px;
+}
+div.content .header p{}
+div.content .header li{
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+    line-height: 80px;
+}
+div.content .section{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.content h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    line-height: 80px;
+}
+div.content h3{
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    line-height: 40px;
+}
+div.content h5{
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+}
+div.content h6{
+    font-weight: 700;
+    font-size: 12px;
+    color: #333;
+    line-height: 40px;
+}
+div.content p{
+    font-weight: 300;
+    line-height: 20px;
+}
+div.content menu{
+    font-size: 30px; 
+    color: #000;
+    line-height: 40px;
+}
+div.content .segment dt{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+div.content .segment dd{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+div.banner{
+    padding: 80px 0;
+}
+div.banner .section{
+    width: 1080px;
+    margin: 0 auto;
+}
+/*글로벌 푸터*/
+div.ftrWrap{
+    background-color: #3b383a;
+    padding: 40px 0;
+}
+div.ftrWrap .footer{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #FFF;
+}
+div.ftrWrap .footer .header li{
+    margin-right: 10px;
+    line-height: 40px;
+}
+div.ftrWrap>hr{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+div.ftrWrap .section{
+    width: 90%;
+    max-width: 1080px;
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+div.ftrWrap .section h1{
+    width: 120px;
+    height: 120px;
+    font-size: 36px;
+    line-height: 120px;
+    background-image: url(../img/footerLogo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FC0;
+}
+div.ftrWrap .section p{
+    width: 610px;
+    height: 40px;
+}
+div.ftrWrap .section menu{
+    font-size: 30px;
+    line-height: 40px;
+    width: 120px; text-align: right;
+}

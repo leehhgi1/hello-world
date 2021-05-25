@@ -1,0 +1,193 @@
+div.menuWrap {
+    height: 30px;
+}
+div.menuWrap select {
+    font-size: 11px;
+    /*display: none;*/
+}
+div.hdrWrap {
+    height: 40px;
+    position: relative;
+}
+div.hdrWrap header{
+    height: 40px;
+	top: -10px;
+}
+div.hdrWrap header .logo{
+    width: 40%;
+    margin-top: -20px;
+}
+div.hdrWrap header nav {
+    display: none;
+}
+div.hdrWrap header .btn {
+    display: block; height: 40px;
+	line-height: 40px;	
+}
+div.mnWrap{
+    height: 350px; padding-top: 60px;
+}
+div.mnWrap main h2{
+    font-size: 24px; line-height: 40px;
+	
+}
+
+div.nav{}
+div.nav>div{
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+div.hdrWrap header .btn {
+    display: block; height: 30px;
+}
+div.hdrWrap header .btn input{
+    display: none;
+    position: relative;
+}
+div.hdrWrap header .btn .nav{
+    padding: 60px 0px;
+    width: 0%; height: 450px;
+    background-color: #333;
+    position: absolute;
+    top: 40px; right: -20px;
+    overflow: hidden;
+    transition: width 0.3s;
+    text-align: center;
+    color: #fff;
+}
+#nav:checked+.nav{
+    width: 90%;
+    right: -20px;
+}
+div.hdrWrap header .btn .nav h2{
+    padding: 20px 0;
+}
+
+
+
+
+
+div.content{
+    padding: 80px 0;
+}
+
+div.ct1{
+    background-color: #fae69b;
+}
+div.ct1 section{
+    margin-top: 0;
+    text-align: center;
+}
+div.ct1 section .texts{
+    max-width: 1060px;
+    margin: 0 auto;
+    height: 240px; background-color: #fff;
+    padding: 0;
+}
+div.ct1 section .texts h3{
+    line-height: 80px; font-size: 18px;
+}
+div.ct1 section .texts h4{
+    font-weight: 300; font-size: 14px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+div.ct1 section .texts h4 br{
+    display: none;
+}
+
+
+div.ct2 section article .image h2{
+    font-size: 36px; line-height: 60px;
+}
+div.ct2 section article .image:nth-of-type(2){
+    display: none;
+}
+div.ct2 section article:nth-child(n+2){
+    margin-top: 120px; /*모바일*/
+}
+div.ct2 section article div{
+    width: calc(100% - 20px); height: 340px;
+    background-color: #ccc;
+}
+div.ct2 section article div:first-child{
+    height: 120px;/**/
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+div.ct2 section article .texts{
+    padding: 0px 5px;/**/
+    border: 8px solid #ccc;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+div.ct2 section article:nth-child(2) .texts{
+    border: 8px solid #fbd5dc;
+}
+div.ct2 section article:nth-child(3) .texts{
+    border: 8px solid #9bbfd9;
+}
+div.ct2 section article .texts h3{
+    line-height: 80px; /**/
+    font-size: 18px;
+}
+div.ct2 section article .texts h6{
+    line-height: 20px; /**/
+}
+div.ct2 section article .texts br{
+    display: none;
+}
+div.ct2 section article .texts p{
+    margin-top: 20px;/**/
+    /*outline: 1px solid #f00;*/
+}
+
+
+div.ct3 header .image{
+    width: calc(100% - 20px);
+    height: 160px; margin: 0 auto;
+    background-color: #ccc;
+}
+div.ct3 header .image h2{
+    font-size: 64px; font-weight: 700;
+    line-height: 120px; font-style: italic;
+    padding: 20px 0; color: rgba(0,0,0,0.7);
+}
+div.ct3 section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    flex-wrap: wrap;
+}
+div.ct3 section article{
+    width: calc(100% - 20px);
+    text-align: center;
+}
+div.ct3 section article:nth-child(n+3){
+    margin-top: 40px;
+}
+div.ct3 section article .image{
+    width: 70%; margin: 0 auto;
+    height: 200px; 
+    background-color: transparent;
+}
+div.ct3 section article .texts{
+    margin-top: 20px;
+}
+div.ct3 section article .texts br{
+    display: none;
+}
+div.ct3 section article .texts h3{}
+div.ct3 section article .texts p{
+    /*outline: 1px solid #f00;*/
+    height: 80px; margin-top: 20px;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+div.ftrWrap footer nav ul li{
+    font-size: 12px; margin: 0 10px;
+}

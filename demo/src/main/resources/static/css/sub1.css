@@ -1,0 +1,318 @@
+/*sub1.css*/
+body{
+	overflow-x: hidden;
+}
+div.wrapper{
+	display: flex;
+	width: 300%;
+	background: linear-gradient(
+    to bottom right,  
+    #fe676e, #ffdca2,
+    #ffbd71, #fd8f52,
+	#fd8f52, #ffdca2,
+    #fe676e, #ffbd71);
+    background-repeat: no-repeat;
+    background-size: 1000% 1000%;
+    animation: gradient 240s ease infinite;
+}
+div.page{
+	width: calc(100% / 3);
+}
+div.content section{
+	display: flex;
+	justify-content: space-around;
+}
+div.content .texts{
+	width: calc(50% - 20px);
+	/*background-color: #ccc;*/
+}
+div.content .image{
+	width: calc(50% - 20px);
+	height: 560px;
+	background-color: #ccc;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+div.content .i1{
+	background-image: url();
+}
+div.mouseW{
+	display: none;
+}
+div.content header{
+	margin: 0 auto;
+}
+div.content header h2{
+	font-size: 48px; font-weight: 600;
+	color: #fd6c6a; line-height: 80px;
+	text-transform: uppercase;
+}
+
+/*ct1_start*/
+div.ct1 section{
+	position: relative;
+}
+div.ct1 .texts{
+	width: calc(50% - 20px);
+}
+div.ct1 .texts .textTitle{
+	margin-top: 20px;
+}
+div.ct1 .texts .textTitle h3{
+	font-size: 48px;
+	line-height: 80px;
+}
+div.ct1 .hgroup h2{
+	text-align: center;
+}
+div.ct1 .texts h4{
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+div.ct1 .texts p{
+	height: 80px;
+	margin-top: 40px;
+}
+div.ct1 .h2view{
+    width: 340px;
+    height: 80px;
+	box-shadow: 0px 0px 0px 5px #fd6c6a;
+	border-radius: 3px;
+	overflow: hidden;
+}
+div.ct1 .hgroup{
+	position: relative;
+}
+div.ct1 h2{
+	font-family: 'ImcreSoojin';
+    font-size: 42px; color: #000;
+    line-height: 80px; height: 80px;
+	text-align: center;
+}
+
+/*ct2_start*/
+/*div.ct2 header{
+	margin: 0 auto;
+}
+div.ct2 header h2{
+	font-size: 48px; font-weight: 600;
+	color: #fd6c6a; line-height: 80px;
+}*/
+div.ct2 header ul{
+	width: 820px;
+	color: #000;
+	margin-left: 20px;
+}
+div.ct2 header ul li{
+	font-size: 14px;
+	height: 80px;
+	list-style: disc;
+}
+div.ct2 section {
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+div.ct2 section article {
+	width: calc(25% - 20px);
+	position: relative;
+}
+
+div.ct2 section article .progress {
+	width: 200px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	border-radius: 200px;
+	overflow: hidden;
+	background-color: #ccc;
+	position: relative;
+}
+div.ct2 section article .progress ul {
+	width: 50%;
+	overflow: hidden;
+}
+div.ct2 section article .progress ul.left li {
+	height: 200px;
+	background-color: #fd6c6a;
+	transform: rotate(180deg);
+	width: 100%;
+	transform-origin: right;
+}
+div.ct2 section article .progress ul.right li {
+	height: 200px;
+	background-color: #fd6c6a;
+	transform: rotate(0deg);
+	transform-origin: right;
+	width: 100%;
+	margin-left: -100%;
+}
+div.ct2 section article .prog{
+	width: 180px; height: 180px;
+	background-image: url(../img/circle_size.png);
+	background-color: #fff;
+	border-radius: 70%;
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0; top: 0; bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+div.ct2 section article .prog h3{
+	font-size: 24px; font-family: 'ImcreSoojin';
+}
+div.ct2 section article .texts{
+	width: 100%;
+	text-align: center;
+	/*outline: 1px solid #f00;*/
+}
+div.ct2 section article .texts h4 {
+	font-family: 'ImcreSoojin';
+}
+
+/*ct3_start*/
+div.ct3 section{
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.ct3 section .texts{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	/*outline: 1px solid #f00;*/
+}
+div.ct3 section .texts .pGroup{
+	width: calc(50% - 20px);
+	/*outline: 1px solid #f00;*/
+}
+div.ct3 section .texts .pGroup ul{
+	color: #000;
+	margin-left: 20px;
+}
+div.ct3 section .texts .pGroup li{
+	font-size: 14px;
+	height: 160px;
+	list-style: disc;
+}
+div.ct3 section .texts .artGroup{
+	width: calc(50% - 20px);
+	/*outline: 1px solid #f00;*/
+}
+div.ct3 section .artGroup article{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+div.ct3 section .artGroup article:nth-child(2){
+	padding: 20px 0;
+}
+div.ct3 section .artGroup article .text{
+	width: 10%;
+}
+div.ct3 section .artGroup article .text h4{
+	font-family:'ImcreSoojin';
+}
+div.ct3 section .artGroup article .text h5{
+	display: none;
+}
+div.ct3 section .artGroup article .progress{
+	width: 90%; height: 20px;
+	background-color: #ccc;
+	border-radius: 40px;
+	overflow: hidden;
+}
+div.ct3 section .artGroup article .progress .bar {
+	list-style: none;
+	width: 0%; border-radius: 40px;
+	height: 20px;
+	background-color: #fd6c6a;
+}
+div.ct3 section .keyword{
+	padding-top: 40px;
+}
+div.ct3 section .keyword h3{
+	font-family:'ImcreSoojin';
+	line-height: 80px;
+}
+div.ct3 section .keyword ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+div.ct3 section .keyword li{
+	font-family:'ImcreSoojin'; /*padding: 0 30px;*/
+	color: #fd6c6a; font-size: 14px;
+	line-height: 40px; height: 40px; 
+	border: 2px solid #fd6c6a; border-radius: 20px;
+	text-align: center;
+	margin-right: 30px;
+}
+/*div.ct3 section .keyword li:nth-child(n+8):nth-child(-n+13){
+	margin: 20px 30px 20px 0px;
+}*/
+div.ct3 section .keyword li:nth-child(1){
+	width: 120px;
+}
+div.ct3 section .keyword li:nth-child(2){
+	width: 160px;
+}
+div.ct3 section .keyword li:nth-child(3){
+	width: 100px;
+}
+div.ct3 section .keyword li:nth-child(4){
+	width: 120px;
+}
+div.ct3 section .keyword li:nth-child(5){
+	width: 60px;
+}
+div.ct3 section .keyword li:nth-child(6){
+	width: 200px;
+}
+div.ct3 section .keyword li:nth-child(7){
+	width: 180px; margin-right: 0;
+}
+div.ct3 section .keyword li:nth-child(8){
+	width: 180px; margin: 20px 30px 20px 0px;
+}
+div.ct3 section .keyword li:nth-child(9){
+	width: 140px; margin: 20px 30px 20px 0px;
+}
+div.ct3 section .keyword li:nth-child(10){
+	width: 200px; margin: 20px 30px 20px 0px;
+}
+div.ct3 section .keyword li:nth-child(11){
+	width: 120px; margin: 20px 30px 20px 0px;
+}
+div.ct3 section .keyword li:nth-child(12){
+	width: 180px; margin: 20px 30px 20px 0px;
+}
+div.ct3 section .keyword li:nth-child(13){
+	width: 140px; margin: 20px 0px;
+}
+div.ct3 section .keyword li:nth-child(14){
+	width: 200px;
+}
+div.ct3 section .keyword li:nth-child(15){
+	width: 120px;
+}
+div.ct3 section .keyword li:nth-child(16){
+	width: 120px;
+}
+div.ct3 section .keyword li:nth-child(17){
+	width: 120px;
+}
+div.ct3 section .keyword li:nth-child(18){
+	width: 200px;
+}
+div.ct3 section .keyword li:nth-child(19){
+	width: 120px;
+}
+div.ct3 section .keyword li:nth-child(20){
+	width: 60px; margin-right: 0;
+}

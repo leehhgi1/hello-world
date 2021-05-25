@@ -1,0 +1,448 @@
+/*top-menu*/
+div.menuWrap>.menu{
+    overflow: hidden;
+}
+div.menuWrap>.menu>ul{
+    overflow: hidden;
+    float: right;
+}
+div.menuWrap>.menu>ul>li{
+    float: left;
+    margin-left: 20px;
+}
+
+/*header*/
+div.hdrWrap{}
+div.hdrWrap>.header{
+    overflow: hidden; 
+}
+div.hdrWrap>.header>h1{
+    float: left;
+}
+div.hdrWrap>.header>ul{
+    overflow: hidden;
+    float: right;
+}
+div.hdrWrap>.header>ul>li{
+    float: left;
+    margin-left: 40px;
+}
+
+/*main*/
+div.mnWrap{
+    overflow-x: hidden;
+}
+div.mnWrap>.mnGroup{
+    overflow: hidden;
+    width: 500%;
+    
+    /*현재상태*/
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+div.mnWrap>input{display: none;}
+#b1:checked~.mnGroup{margin-left: 0;}
+#b2:checked~.mnGroup{margin-left: -100%;}
+#b3:checked~.mnGroup{margin-left: -200%;}
+#b4:checked~.mnGroup{margin-left: -300%;}
+#b5:checked~.mnGroup{margin-left: -400%;}
+
+div.mnWrap>.mnGroup>.mnimg{
+    float: left;
+    height: 640px;
+    width: calc(100% / 5);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.mnWrap>.mnGroup>.i1{
+    /*background-color: #fc0;*/
+    background-image: url(../img/index_main_i1.jpg);
+}
+div.mnWrap>.mnGroup>.i2{
+    /*background-color: #f90;*/
+    background-image: url(../img/index_main_i2.jpg);
+}
+div.mnWrap>.mnGroup>.i3{
+    /*background-color: #f50;*/
+    background-image: url(../img/index_main_i3.jpg);
+}
+div.mnWrap>.mnGroup>.i4{
+    /*background-color: #f00;*/
+    background-image: url(../img/index_main_i4.jpg);
+}
+div.mnWrap>.mnGroup>.i5{
+    /*background-color: #fc0;*/
+    background-image: url(../img/index_main_i5.jpg);
+}
+
+div.mnWrap>.ovMain{
+    width: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: -40px;
+    position: absolute;
+    left: 0; right: 0;
+}
+div.mnWrap>.ovMain>div{
+    float: left;
+}
+div.mnWrap>.ovMain>div>label{
+    display:block;
+    width:20px;height:20px;
+    background-color:#3b383a;
+    /*background-color: #000;*/
+    border-radius:50%;
+    /*border: 3px solid #9a0419;*/
+    cursor:pointer;
+    margin: 0 2px;
+}
+#b1:checked~.ovMain>div:nth-child(1)>label{
+    background-color: #9a0419;
+    border: 4px solid #fff;
+}
+#b2:checked~.ovMain>div:nth-child(2)>label{
+    background-color: #9a0419;
+	border: 4px solid #fff;
+}
+#b3:checked~.ovMain>div:nth-child(3)>label{
+    background-color: #9a0419;
+	border: 4px solid #fff;
+}
+#b4:checked~.ovMain>div:nth-child(4)>label{
+    background-color: #9a0419;
+	border: 4px solid #fff;
+}
+#b5:checked~.ovMain>div:nth-child(5)>label{
+    background-color: #9a0419;
+	border: 4px solid #fff;
+}
+
+
+
+
+div.noticeWrap{
+    background-color: #000;
+    overflow: hidden;
+    color: #fff;
+}
+div.noticeWrap>.notice{
+    width: calc(100% / 2);
+    max-width: 1080px;
+    /*overflow: hidden;*/
+    background-color: #ccc;
+    float: left; 
+    /*height: 80px;*/
+}
+div.noticeWrap>.notice:nth-child(1){
+    background-color: #3b3833;
+}
+div.noticeWrap>.notice:nth-child(2){
+    background-color: #9a0419;
+}
+div.noticeWrap>.notice>.article{
+    width: 90%;
+    max-width: 540px;
+    /*width: 540px;*/
+    /*width: 100%; max-width: 540px;*/
+    overflow: hidden;/* margin: 0 10px;*/
+}
+div.noticeWrap>.notice>.art1{
+    /*width: 100%; max-width: 540px;*/
+    /*height: 80px; overflow: hidden;*/
+    float: right; padding: 20px 0;
+}
+div.noticeWrap>.notice>.art1>.segment{
+    /*display: flex;
+    justify-content: space-around;*/
+    overflow:hidden;   
+}
+div.noticeWrap>.notice>.art1>.segment>*{
+    /*margin: 0 10px;*/
+}
+div.noticeWrap>.notice>.art1>.segment>.logo{
+    /*width: 70px;*/
+    width: 17%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    float: left; margin-right: 10px;
+}
+div.noticeWrap>.notice>.art1>.segment>.text{
+    /*width: 340px;*/
+    width: 63%; height: 40px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    float: left; margin: 0 10px;
+}
+div.noticeWrap>.notice>.art1>.segment>.icon{
+    /*width: 70px;*/ 
+    width: 10%;
+    text-align: center;
+    float: left; margin-left: 10px;
+}
+
+div.noticeWrap>.notice>.art2{
+    width: 90%; max-width: 540px;
+    padding: 20px 0; float: left;
+}
+div.noticeWrap>.notice>.art2>.segment{
+    text-align: center; color: #000;
+}
+div.noticeWrap>.notice>.art2>.segment>h3{
+    display: inline;
+}
+div.noticeWrap>.notice>.art2>.segment>menu{
+    display: inline; margin-left: 5px;
+}
+
+/*cnt1*/
+div.cnt1{}
+div.cnt1>.header{
+    /*width: 1060px;*/
+    width:90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+div.cnt1>.header>h2{
+    float: left;
+}
+div.cnt1>.header>ul{
+    overflow: hidden;
+    float: right;
+}
+div.cnt1>.header>ul>li{
+    float: left;
+    margin-right: 20px;
+}
+div.cnt1>.header>ul>li:nth-child(3){
+    font-weight: 700;
+    color: #9a0419;
+}
+div.cnt1>.section{
+    margin-top: 80px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+div.cnt1>.section>.article{
+    /*width: 250px; max-width: 1060px;*/
+    width: calc(100% / 4 - 20px);
+    max-width: 1080px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+div.cnt1>.section>.article>.image{
+    width: 100%;
+    height: 320px;
+    /*background-color: #ccc;*/
+    
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transition: background-size 0.3s;
+}
+div.cnt1>.section>.article>.image:hover{
+    background-size: 130%;    
+}
+div.cnt1>.section>.article>h3{
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+div.cnt1>.section>.article>p{
+    line-height: 20px;
+    height: 80px;
+    overflow: hidden;
+	color: #000;
+    /*white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;*/
+}
+
+div.cnt1>.section>.btnGroup{
+    width: 90%; /*max-width:200px;*/
+    max-width:1080px;
+    height: 80px; /*background-color: #f30;*/
+    position: absolute; margin: auto; top: 0; bottom: 0;
+}
+div.cnt1>.section>.btnGroup>button{
+    font-size: 30px;
+    width: 60px; height: 60px;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+}
+div.cnt1>.section>.btnGroup>.btPrev{
+    left: -100px;
+}
+div.cnt1>.section>.btnGroup>.btNext{
+    right: -100px;
+}
+
+div.cnt1>.section>.article>.i1{
+    background-image: url(../img/index_ct1_i1.png);
+}
+div.cnt1>.section>.article>.i2{
+    background-image: url(../img/index_ct1_i2.png);
+}
+div.cnt1>.section>.article>.i3{
+    background-image: url(../img/index_ct1_i3.png);
+}
+div.cnt1>.section>.article>.i4{
+    background-image: url(../img/index_ct1_i4.png);
+}
+/*cnt2*/
+div.cnt2{
+    background-color: #ccc;
+    background-image: url(../img/index_ct2_i1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+}
+div.cnt2>.section{
+    overflow: hidden;
+}
+div.cnt2>.section>.article{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    /*height: 280px;*/
+    /*padding: 0 10px;*/
+}
+div.cnt2>.section>.article>.segment{
+    width: calc(100% / 2 - 20px);
+    float: right; margin: 0 10px;
+}
+div.cnt2>.section>.article>.segment>h2{
+    line-height: 40px;
+}
+div.cnt2>.section>.article>.segment>p{
+    margin-top: 40px;
+    color: #000;
+    /*width: 340px;*/
+    height: 80px;
+    overflow: hidden;
+}
+div.cnt2>.section>.article>.segment>.btn{
+    width: 100%;
+    /*width: 520px;*/
+    margin-top: 40px;
+}
+div.cnt2>.section>.article>.segment>.btn>button{
+    /*width: 160px;*/
+    width: calc(33.33% - 20px);
+    height: 60px;
+    color: #fff;
+    background-color: #000;
+    border-style: none;
+    display: block;
+    float: left;
+}
+div.cnt2>.section>.article>.segment>.btn>button:nth-child(1){
+    margin-right: 10px;
+}
+div.cnt2>.section>.article>.segment>.btn>button:nth-child(2){
+    margin:0 10px;
+}
+div.cnt2>.section>.article>.segment>.btn>button:nth-child(3){
+    margin-left: 10px;
+    /*margin-right: 0;*/
+}
+/*cnt3*/
+div.cnt3{}
+div.cnt3>.section{
+    /*overflow: hidden;*/    
+}
+div.cnt3>.section>.article{
+    width: calc(100% / 2 - 20px);
+    margin: 0 10px;
+    float: left;
+    position: relative;
+}
+div.cnt3>.section>.article>.image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt3>.section>.article>.i1{
+    /*width: 400px; height: 400px;*/
+    width: 50vw; height: 50vw;
+    max-width: 400px; max-height: 400px;
+    background-color: #666;
+    border-radius: 70%;
+    background-image: url(../img/index_ct3_i1.jpg);
+}
+div.cnt3>.section>.article>.i2{
+    width: 40vw; height: 40vw;
+    max-width: 300px; max-height: 300px;
+    background-color: #ccc;
+    position: absolute;
+    margin: auto;
+    right: 0; top: 220px;
+    border-radius: 70%;
+    background-image: url(../img/index_ct3_i2.png);
+}
+div.cnt3>.section>.article>.segment{
+    padding: 120px 0;
+}
+div.cnt3>.section>.article>.segment>h2{
+    line-height: 40px;
+}
+div.cnt3>.section>.article>.segment>p{
+    height: 80px; overflow: hidden; margin-top: 40px;
+}
+div.cnt3>.section>.article>.segment>.btn{
+    margin-top: 40px; padding-bottom: 20px;
+}
+div.cnt3>.section>.article>.segment>.btn>button{
+    width: 160px; height: 60px; color: #fff; 
+    border: 0; background-color: #000;
+}
+
+/*footer*/
+div.ftrWrap{}
+div.ftrWrap>.footer{}
+div.ftrWrap>.footer>.header{}
+div.ftrWrap>.footer>.header>ul{
+    overflow: hidden;
+}
+div.ftrWrap>.footer>.header>ul>li{
+    float: left;
+}
+div.ftrWrap>hr{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+div.ftrWrap>.section{
+    overflow: hidden;
+    position: relative;
+}
+div.ftrWrap>.section>h1{
+    float: left;
+}
+div.ftrWrap>.section>p{
+    width: 610px;
+    height: 40px;
+    float: left;
+    margin-left: 60px;
+}
+div.ftrWrap>.section>p:nth-child(3){
+    font-size: 10px;
+    height: 20px;
+    margin-top: 60px;
+}
+div.ftrWrap>.section>menu{
+    position: absolute;
+    margin: auto;
+    right: 0; bottom: 0;
+}

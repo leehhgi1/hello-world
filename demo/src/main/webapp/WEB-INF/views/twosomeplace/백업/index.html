@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>A Twosome Place</title>
+    <link rel="icon" href="img/footerLogo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var slideIndex = 0;
+        var timer;
+        $(document).ready(function(){
+            showSlides();
+
+            $("input[name=mnimg").click(function() {
+                clearTimeout(timer);
+            
+                slideIndex = $(this).val();
+                // alert(slideIndex);
+
+                showSlides();
+            });
+        });
+
+        function showSlides() {
+            
+            var dots = $("input[name=mnimg]");
+            
+            slideIndex++;
+            
+            if (slideIndex > dots.length) {slideIndex = 1}
+            // alert(slideIndex);
+            $("#b"+slideIndex).prop("checked", true);
+          
+            timer = setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function fnLeftImage() {
+            alert("left test");
+        }
+
+        function fnRightImage() {
+            alert("right test");
+        }
+
+        function test(url) {
+            var testForm = $("#testForm");
+            testForm.attr("action", url).submit();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="menuWrap">
+        <div class="menu">
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>고객센터</li>
+                <li>공지사항</li>
+            </ul>
+        </div>
+    </div>
+    <div class="hdrWrap">
+        <div class="header">
+            <h1><a href="#" onclick="test('index.html'); return false;"></a></h1>
+            <ul>
+                <li><a href="#" onclick="test('sub1.html'); return false;">브랜드 스토리</a></li>
+                <li><a href="#" onclick="test('sub2.html'); return false;">메뉴</a></li>
+                <li><a href="#" onclick="test('sub3.html'); return false;">이벤트</a></li>
+                <li><a href="">가맹정보</a></li>
+                <li><a href="">매장정보</a></li>
+            </ul>
+        </div>
+    </div>
+    <form id="testForm" method="post">
+    <div class="mnWrap">
+        <input type="radio" name="mnimg" id="b1" value="0" checked>
+        <input type="radio" name="mnimg" id="b2" value="1">
+        <input type="radio" name="mnimg" id="b3" value="2">
+        <input type="radio" name="mnimg" id="b4" value="3">
+        <input type="radio" name="mnimg" id="b5" value="4">
+        <div class="mnGroup">
+            <div class="mnimg i1" name="mainImg">image1</div>
+            <div class="mnimg i2" name="mainImg">image2</div>
+            <div class="mnimg i3" name="mainImg">image3</div>
+            <div class="mnimg i4" name="mainImg">image4</div>
+            <div class="mnimg i5" name="mainImg">image5</div>
+        </div>
+    </div>
+    <div class="ovMain">
+        <div class="c1"><label for="b1"></label></div>
+        <div class="c2"><label for="b2"></label></div>
+        <div class="c3"><label for="b3"></label></div>
+        <div class="c4"><label for="b4"></label></div>
+        <div class="c5"><label for="b5"></label></div>
+    </div>
+    
+    <div class="noticeWrap">
+        <div class="notice">
+            <div class="article art1">
+                <div class="segment">
+                    <h3 class="logo">공지사항</h3>
+                    <p class="text">
+                        투썸플레이스 현대카드 이용시 페이백 1000원 이벤트
+                    </p>
+                    <menu class="icon"><i class="fas fa-plus"></i></menu>
+                </div>
+            </div>
+            <div class="article art2">
+                <div class="segment">
+                    <h3>이달의 프로모션</h3>
+                    <menu><i class="fas fa-chevron-left fa-rotate-270"></i></menu>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content cnt1">
+        <div class="header">
+            <h2>Twosome Menu</h2>
+            <ul>
+                <li>커피</li>
+                <li>|</li>
+                <li>Non-Coffe</li>
+                <li>|</li>
+                <li>디저트</li>
+                <li>|</li>
+                <li>델리</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="article">
+                <div class="image i1" id="image1"></div>
+                <h3>스트로베리 요거 라떼</h3>
+                <p>
+                    요거트가 들어간 스트로베리 프라페에 바닐라 아이스크림을 올려 더욱 달콤하게 <br>즐기는 프라페
+                </p>
+            </div>
+            <div class="article">
+                <div class="image i2" id="image2"></div>
+                <h3>스트로베리 피치 프라페</h3>
+                <p>
+                    딸기와 복숭아의 상큼함이 조화롭게 <br>어우러진 스무디 타입의 음료
+                </p>
+            </div>
+            <div class="article">
+                <div class="image i3" id="image3"></div>
+                <h3>스트로베리 라떼</h3>
+                <p>
+                    달콤한 스트로베리와 부드러운 우유가 만나 조화롭게 즐길 수 있는 스트로베리 시즌 <br>시그니처 음료
+                </p>
+            </div>
+            <div class="article">
+                <div class="image i4" id="image4"></div>
+                <h3>리프레싱 스트로베리 아이스티</h3>
+                <p>
+                    얼그레이 향이 매력적인 TWGTEA에 생딸기 베이스가 어우러진 아이스티 음료
+                </p>
+            </div>
+            <div class="article">
+                <div class="image i5" id="image5"></div>
+                <h3>리프레싱 스트로베리 아이스티</h3>
+                <p>
+                    얼그레이 향이 매력적인 TWGTEA에 생딸기 베이스가 어우러진 아이스티 음료
+                </p>
+            </div>
+            <div class="btnGroup">
+                <button class="btPrev">
+                    <i class="fas fa-chevron-left" onclick="fnLeftImage()"></i>
+                </button>
+                <button class="btNext">
+                    <i class="fas fa-chevron-right" onclick="fnRightImage()"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="content cnt2">
+        <div class="section">
+            <div class="article">
+                <div class="segment">
+                    <h2>A TWOSOME PLACE</h2>
+                    <p>
+                        투썸플레이스는 오랜 노하우로 국내외 커피 시장을 선도하며 스페셜티 커피와 갓 구운 다양한 케이크,
+                        문화가 융합된 특별한 공간으로 지금 대한민국을
+                        비롯해 <br>전 세계에서 사랑받는 브랜드 입니다.
+                    </p>
+                </div>
+                <div class="btn">
+                    <button>가맹문의</button>
+                    <button>브랜드 소개</button>
+                    <button>신규매장 소개</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="content cnt3">
+        <div class="section">
+            <div class="circle">
+                <div class="image i1"></div>
+                <div class="image i2"></div>
+            </div>
+            <div class="article">
+                <div class="segment">
+                    <h2>가까운 곳에서 투썸 플레이스를 찾아보세요.</h2>
+                    <p>
+                        고객님과 가장 가까이 있는 매장을 찾아보세요!
+                        <br>차별화된 커피 경험을 누릴수 있는 리저브 매장
+                        <br>다양한 방법으로 편리하게 즐길수 있는 드라이브 스루 매장
+                        <br>함께해서 더 따듯할 수 있는 지역사회 소통 공간 커뮤니티 매장
+                    </p>
+                </div>
+                <div class="btn">
+                    <button>매장찾기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ftrWrap">
+        <div class="footer">
+            <div class="header">
+                <ul>
+                    <li>오시는 길</li>
+                    <li>제휴문의</li>
+                    <li>개인정보처리방침</li>
+                    <li>이용약관</li>
+                    <li>고객센터</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="section">
+            <h1><a href=""></a></h1>
+            <p>
+                서울특별시 중구 을지로 170,8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)&nbsp;&nbsp;&nbsp;대표이사:이영상
+                <br>사업자등록번호 : 404-86-01054&nbsp;&nbsp;&nbsp;helpmaster@twsome.co.kr
+            </p>
+            <p>
+                Copyright ⓒ 2020 A TWOSOME PLACE CO.LTD.ALL RIGHTS RESERVED.
+            </p>
+            <menu>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </menu>
+        </div>
+    </div>
+</form>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

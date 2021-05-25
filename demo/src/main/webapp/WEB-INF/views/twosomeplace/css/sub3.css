@@ -1,0 +1,240 @@
+/*sub1.css*/
+div.menuWrap>.menu{
+    overflow: hidden;
+}
+div.menuWrap>.menu>ul{
+    overflow: hidden;
+    float: right;
+}
+div.menuWrap>.menu>ul>li{
+    float: left;
+    margin-left: 20px;
+}
+
+/*header*/
+div.hdrWrap{}
+div.hdrWrap>.header{
+    overflow: hidden; 
+}
+div.hdrWrap>.header>h1{
+    float: left;
+}
+div.hdrWrap>.header>ul{
+    overflow: hidden;
+    float: right;
+}
+div.hdrWrap>.header>ul>li{
+    float: left;
+    margin-left: 40px;
+}
+
+div.subTitle{
+    background-color: #eee;
+    padding: 20px 0;
+}
+div.subTitle>.segment{
+    width: 90%; max-width: 1080px;
+    margin: 0 auto;
+}
+div.subTitle>.segment>h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000;
+}
+
+/*main*/
+div.main{
+    height: 480px;
+    background-color: #999;
+    background-image: url(../img/sub3_main.jpg);
+    background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+}
+
+div.nav{
+    width: 90%; max-width: 1080px;
+    height: 80px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    padding: 0 20px; 
+}
+div.nav>.btn{
+    width: calc(100% / 3 - 40px);
+    margin: 0 auto;
+    position: relative;
+}
+div.nav>.btn>button{
+    font-weight: 700; font-size: 18px;
+    width: 100%;
+    height: 40px;
+    color: #fff; background-color: #3b383a;
+    border: 0;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+}
+div.nav>.btn:nth-child(1)>button{
+    background-color: #9a0419;
+}
+
+div.cnt1{
+    padding-top: 40px;
+}
+div.cnt1>.header{
+    width: 90%; max-width: 1080px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+div.cnt1>.header>h3{
+    margin-left: 20px;
+}
+div.cnt1>.section{
+    margin-top: 40px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.cnt1>.section>.article{
+    width: calc(100% / 4 - 20px);
+}
+div.cnt1>.section>.article:nth-child(n+5){
+    margin-top: 40px;
+}
+div.cnt1>.section>.article>.image{
+    height: 240px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt1>.section>.article>.segment{
+    text-align: center;
+}
+div.cnt1>.section>.article>.segment>h5{}
+div.cnt1>.section>.article>.segment>p{}
+div.cnt1>.section>.article>.i1{
+    background-image: url(../img/sub3_ct1_i1.jpg);
+}
+div.cnt1>.section>.article>.i2{
+    background-image: url(../img/sub3_ct1_i2.png);
+}
+div.cnt1>.section>.article>.i3{
+    background-image: url(../img/sub3_ct1_i3.jpg);
+}
+div.cnt1>.section>.article>.i4{
+    background-image: url(../img/sub3_ct1_i4.jpg);
+}
+div.cnt1>.section>.article>.i5{
+    background-image: url(../img/sub3_ct1_i5.jpg);
+}
+div.cnt1>.section>.article>.i6{
+    background-image: url(../img/sub3_ct1_i6.jpg);
+}
+div.cnt1>.section>.article>.i7{
+    background-image: url(../img/sub3_ct1_i7.jpg);
+}
+div.cnt1>.section>.article>.i8{
+    background-image: url(../img/sub3_ct1_i8.jpg);
+}
+
+/*cnt2*/
+div.cnt2{}
+div.cnt2>.header{
+    width: 90%; max-width: 1080px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+div.cnt2>.header>h3{
+    margin-left: 20px;
+}
+div.cnt2>.section{
+    margin-top: 40px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.cnt2>.section>.article{
+    width: calc(100% / 4 - 20px);
+}
+div.cnt2>.section>.article:nth-child(n+5){
+    margin-top: 40px;
+}
+div.cnt2>.section>.article>.image{
+    height: 240px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cnt2>.section>.article>.segment{
+    text-align: center;
+}
+div.cnt2>.section>.article>.segment>h5{}
+div.cnt2>.section>.article>.segment>p{}
+div.cnt2>menu{
+    text-align: center;
+    margin-top: 80px;
+}
+div.cnt2>.section>.article>.i1{
+    background-image: url(../img/sub3_ct2_i1.jpg);
+}
+div.cnt2>.section>.article>.i2{
+    background-image: url(../img/sub3_ct2_i2.jpg);
+}
+div.cnt2>.section>.article>.i3{
+    background-image: url(../img/sub3_ct2_i3.jpg);
+}
+div.cnt2>.section>.article>.i4{
+    background-image: url(../img/sub3_ct2_i4.jpg);
+}
+div.cnt2>.section>.article>.i5{
+    background-image: url(../img/sub3_ct2_i5.jpg);
+}
+div.cnt2>.section>.article>.i6{
+    background-image: url(../img/sub3_ct2_i6.jpg);
+}
+div.cnt2>.section>.article>.i7{
+    background-image: url(../img/sub3_ct2_i7.jpg);
+}
+div.cnt2>.section>.article>.i8{
+    background-image: url(../img/sub3_ct2_i8.jpg);
+}
+
+/*footer*/
+div.ftrWrap{}
+div.ftrWrap>.footer{}
+div.ftrWrap>.footer>.header{}
+div.ftrWrap>.footer>.header>ul{
+    overflow: hidden;
+}
+div.ftrWrap>.footer>.header>ul>li{
+    float: left;
+}
+div.ftrWrap>hr{}
+div.ftrWrap>.section{
+    overflow: hidden;
+    position: relative;
+}
+div.ftrWrap>.section>h1{
+    float: left;
+}
+div.ftrWrap>.section>p{
+    width: 610px;
+    height: 40px;
+    float: left;
+    margin-left: 60px;
+}
+div.ftrWrap>.section>p:nth-child(3){
+    font-size: 10px;
+    height: 20px;
+    margin-top: 60px;
+}
+div.ftrWrap>.section>menu{
+    position: absolute;
+    margin: auto;
+    right: 0; bottom: 0;
+}

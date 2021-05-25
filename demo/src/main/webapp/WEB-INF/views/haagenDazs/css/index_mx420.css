@@ -1,0 +1,247 @@
+div.menuWrap {
+    height: 30px;
+}
+div.menuWrap select {
+    font-size: 11px;
+    /*display: none;*/
+}
+div.hdrWrap {
+    height: 40px;
+    position: relative;
+}
+div.hdrWrap header{
+    height: 40px;
+	top: -10px;
+}
+div.hdrWrap header .logo{
+    width: 40%;
+    margin-top: -20px;
+}
+div.hdrWrap header nav {
+    display: none;
+}
+div.hdrWrap header .btn{
+    margin: 5px 0;
+}
+div.hdrWrap header .btn button{
+    font-size: 18px;
+}
+
+
+div.mnWrap{
+    height: calc(50vh);
+}
+div.mnWrap main h2{
+    font-size: 16px; line-height: 40px;
+}
+
+div.nav{}
+div.nav>div{
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+div.hdrWrap header .btn {
+    display: block; height: 30px;
+}
+div.hdrWrap header .btn input{
+    display: none;
+    position: relative;
+}
+div.hdrWrap header .btn .nav{
+    padding: 60px 0px;
+    width: 0%; height: 450px;
+    background-color: #333;
+    position: absolute;
+    top: 40px; right: -20px;
+    overflow: hidden;
+    transition: width 0.3s;
+    text-align: center;
+    color: #fff;
+}
+#nav:checked+.nav{
+    width: 90%;
+    right: -20px;
+}
+div.hdrWrap header .btn .nav h2{
+    padding: 20px 0;
+}
+
+div.content{
+    padding: 80px 0;
+}
+
+div.ct1 header p br{
+    display: none;
+}
+div.ct1 section{
+    display: block;
+}
+div.ct1 section article{
+    width: calc(100% - 20px);
+    margin: 0 auto; margin-top: 40px;
+}
+div.ct1 section article:first-child{
+    margin-top: 0;
+}
+div.ct1 section article .image{
+    height: 250px; 
+}
+div.ct1 section article .texts{
+    margin-top: -30px;
+}
+div.ct1 section article .texts p{
+    padding-top: 10px;
+}
+
+div.ct2{
+    overflow-y: hidden;
+}
+div.ct2 section{
+    max-width: 1060px;
+    margin-top: 0;
+    /*outline: 1px solid #06f;*/
+    display: block; /*justify-content: space-between;*/
+    position: relative;
+}
+div.ct2 section header{
+    width: calc(100% - 20px);
+    /*outline: 1px solid #f00;*/
+    margin: 0 auto;
+}
+div.ct2 section header h3 {
+    /*line-height: 40px;*/
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+div.ct2 section header nav h4 {
+    line-height: 40px;
+    margin-top: 0;
+}
+
+div.ct2 section header p {
+    height: 40px; /*width: 250px;*/
+    width: calc((100% / 7) * 5.5);
+}
+
+div.ct2 section header .btn{
+    padding: 20px 0; margin-left: auto;
+}
+div.ct2 section header .btn a{}
+div.ct2 section header .btn a::after {
+    bottom: 25px;
+}
+div.ct2 section .swiper-container {
+    width: 150%;
+}
+div.ct2 section .swiper-container::after {
+    left: 0;
+}
+
+
+div.ct3 section article{
+    /*outline: 1px solid #555;*/
+    display: block;
+    margin-top: 140px;
+}
+div.ct3 section article .texts{
+    width: 100%;
+    /*outline: 1px solid #363;*/
+}
+div.ct3 section article:nth-child(n+2) .texts p{
+    width: 100%;
+}
+div.ct3 section article .texts ul li{
+    margin-right: 10px; line-height: 40px;
+}
+div.ct3 section article .btn{
+    margin-left: auto; padding: 10px 0 40px 0;
+}
+div.ct3 section article .btn a::after{
+    bottom: 35px;
+    
+}
+div.ct3 section article .imgGroup{
+    width: 100%; height: 320px;
+    /*outline: 1px solid #f00;*/
+    display: flex;
+    justify-content: space-between;
+}
+div.ct3 section article:nth-child(2) .imgGroup{
+    flex-direction: row-reverse;
+}
+div.ct3 section article .imgGroup .image{
+    width: calc(50% - 10px); /*outline: 1px solid #66f;*/
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.ct3 section article .imgGroup .smallImg{
+    width: calc(50% - 10px);
+    /*outline: 1px solid #F60;*/
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+div.ct3 section article .imgGroup .smallImg .image{
+    width: 100%; height: calc(50% - 10px);
+}
+
+
+div.banner{
+    height: 480px;
+}
+div.banner .texts{
+    text-align: center;
+    padding: 120px 0;
+    color: #fff;
+}
+div.banner .texts h3{
+    font-weight: 700; font-size: 24px; line-height: 80px;
+}
+div.banner .texts p{
+    width: 85%;
+    margin: 0 auto;
+    line-height: 20px;
+    height: 80px;
+    white-space: normal;
+}
+
+div.ct4 section{
+    display: block;
+}
+div.ct4 section article{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.ct4 section article:nth-child(n+2){
+    width: 100%; margin-top: 40px;
+}
+div.ct4 section article h4{
+    line-height: 80px; color: #fff;
+}
+div.ct4 section article p{
+    width: 85%;
+    margin: 0 auto;
+    line-height: 20px; color: #fff;
+}
+div.ct4 section article .btn{
+    margin-top: 40px;
+}
+div.ct4 section article .btn button{
+    background-color: #fff;
+}
+
+div.ftrWrap footer nav ul li{
+    font-size: 12px; margin: 0 10px;
+}

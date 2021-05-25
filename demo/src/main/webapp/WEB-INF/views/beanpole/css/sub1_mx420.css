@@ -1,0 +1,118 @@
+/*index_mx420.css*/
+/*body{
+	background-color: rgba(51, 102, 51, 0.29);
+}*/
+
+div.hdrWrap>.header{
+	overflow: visible;
+}
+div.hdrWrap>.header>.logo{
+	position: relative;
+}
+div.hdrWrap>.header>ul{
+    display: none;
+}
+/*header-end*/
+div.mnWrap>.main>.image{
+    height: 540px;
+}
+/*menu_start*/
+div.menuWrap>.menu>ul{
+    overflow: hidden;
+    position: relative;
+    width: 100%; 
+    margin: auto;
+    left: 0; right: 0;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.menuWrap>.menu{
+	height: 40px;
+}
+div.menuWrap>.menu>.sns{
+	display: none;
+}
+div.ovMain>.section>.mov>iframe{
+	height: 300px;
+}
+/*menu_end*/
+div.content{
+    padding: 80px 0;
+} 
+/*ct1_start*/
+div.cnt1>.header>p{
+	width: 90%;
+	margin: 0 auto;
+}
+div.cnt1>.section>.article{
+    width: calc(100%);
+    height: 80px;
+    float: none; margin: 0;
+}
+div.cnt1>.section>.article:nth-child(n+2){
+	margin-top: 20px;
+}
+div.cnt1>.section>.article>.segment>h3{
+	line-height: 0px; font-size: 18px;
+}
+/*ct1_end*/
+/*ct2_start*/
+div.cnt2>.section>.article>div{
+    width: 100%;
+    height: 360px; margin: 0;
+}
+div.cnt2>.section>.article>div{
+    float: none;
+}
+div.cnt2>.section>.article{
+    padding-top: 80px;
+}
+div.cnt2>.section>.article>div{
+	height: 200px;
+}
+div.cnt2>.section>.article:nth-child(even)>div{
+    float: none; text-align: center;
+}
+div.cnt2>.section>.article:nth-child(n+2)>div{
+    margin-top: 0px;
+}
+div.cnt2>.section>.article>.image{
+	float: none;
+}
+div.cnt2>.section>.article>.segment{
+	text-align: center;
+	float: none;
+}
+div.cnt2>.section>.article>.segment>h5{
+	margin-top: 40px;
+}
+div.cnt2>.section>.article>.segment>p>br{
+	display: none;
+}
+/*ct2_end*/
+
+div.ftrWrap>.footer{
+    text-align: center;
+}
+div.ftrWrap>.footer>.logo{
+	width: 20%; height: 60px;
+    float: none;
+    display: inline-block;
+}
+div.ftrWrap>.footer>.nav{
+    width: 100%; 
+    /*background-color: #ccc;*/
+    float: left;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+div.ftrWrap>.footer>.nav>dl{
+    width: 100%;
+    float:none;
+    text-align: center;
+    text-transform: uppercase;
+}
+div.ftrWrap>.footer>.nav>dl>dt{}
+div.ftrWrap>.footer>.nav>dl>dd{
+    display: none;
+}

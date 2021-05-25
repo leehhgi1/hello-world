@@ -1,0 +1,13 @@
+.hdrWrap ul{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.hdrWrap li{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #fe676e;
+	text-align: right;
+	margin-left: 30px;
+}

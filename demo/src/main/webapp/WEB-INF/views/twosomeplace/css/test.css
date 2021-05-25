@@ -1,0 +1,34 @@
+div.con02>.section>.article{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+div.con02>.section>.article>.image{
+    height: 240px; background-color: #999;
+    background-image: url(../img/index_main_mt.jpg);
+}
+div.con02>.section>.article>.segment{
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    background-image: url(../img/headerLogo.png);
+    background-repeat: no-repeat;
+    background-position: bottom 15%;
+    position: absolute; bottom: -240px;
+    transition: bottom 0.3s;
+}
+div.con02>.section>.article:hover>.segment{
+    bottom: 0;
+}
+div.con02>.section>.article>.segment>h3{
+    color: #fff;
+}
+div.con02>.section>.article>.segment>h5{
+    display: none; 
+}
+div.con02>.section>.article>.segment>p{
+    height: 80px; overflow: hidden; color: #fff;
+}
+div.con02>.section>.article>.segment>.sns{
+    font-size: 30px; line-height: 40px; color: #fff;
+}
