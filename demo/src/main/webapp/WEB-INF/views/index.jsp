@@ -17,13 +17,13 @@
 <div class="bg">
 	<div class="navWrap">
        <div class="nav n1">
-            <h3><a href="index.html">HOME</a></h3>
+            <h3><a href="/goIndex.do">HOME</a></h3>
         </div>
         <div class="nav n2">
-            <h3><a href="sub1.html">ABOUT ME</a></h3>
+            <h3><a href="/goSub1.do">ABOUT ME</a></h3>
         </div>
         <div class="nav n3">
-            <h3><a href="sub2.html">PORTFOLIO</a></h3>
+            <h3><a href="/goSub2.do">PORTFOLIO</a></h3>
         </div>
         <div class="nav n4">
             <h3><a href="">PROCESS</a></h3>        	
@@ -37,8 +37,8 @@
 			<header>
 				<h1>LOGOHERE</h1>
 				<ul>
-					<li><a href="sub1.jsp">ABOUT ME</a></li>
-					<li><a href="sub2.html">PORTFOLIO</a></li>
+					<li><a href="/goSub1.do">ABOUT ME</a></li>
+					<li><a href="/goSub2.do">PORTFOLIO</a></li>
 					<li><a href="">PORCESS</a></li>
 				</ul>
 				<div class="bars">
