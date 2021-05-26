@@ -26,4 +26,14 @@ public class TestController {
     public String goSub2() {
         return "sub2";
     }
+
+    @RequestMapping("/goPocariSweat.do")
+    public String goPocariSweat() {
+        return "pocariSweat/index";
+    }
+
+    @RequestMapping("/goPocariPv.do")
+    public String goPocariPv() {
+        return "pocari_preview";
+    }
 }

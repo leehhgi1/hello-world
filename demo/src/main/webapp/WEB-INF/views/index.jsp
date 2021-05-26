@@ -13,36 +13,20 @@
 	<script src="resources/js/index.js"></script>
 	<script>
 
-		function goIndex(){
-			$("#mainForm").attr("action", "/goIndex.do");
-			$("#mainForm").submit();
-		}
-
-		function goSub1(){
-			$("#mainForm").attr("action", "/goSub2.do");
-			$("#mainForm").submit();
-		}
-
-		function goSub2(){
-			$("#mainForm").attr("action", "/goSub1.do");
-			$("#mainForm").submit();
-		}
-
 	</script>
 </head>
 
 <body>
-<form id="mainForm">
 <div class="bg">
 	<div class="navWrap">
        <div class="nav n1">
-            <h3><a href="#" onclick="goIndex();">HOME</a></h3>
+            <h3><a href="/goIndex.do">HOME</a></h3>
         </div>
         <div class="nav n2">
-            <h3><a href="#" onclick="goSub1();">ABOUT ME</a></h3>
+            <h3><a href="/goSub1.do">ABOUT ME</a></h3>
         </div>
         <div class="nav n3">
-            <h3><a href="#" onclick="goSub2();">PORTFOLIO</a></h3>
+            <h3><a href="/goSub2.do">PORTFOLIO</a></h3>
         </div>
         <div class="nav n4">
             <h3><a href="">PROCESS</a></h3>        	
@@ -56,8 +40,8 @@
 			<header>
 				<h1>LOGOHERE</h1>
 				<ul>
-					<li><a href="#" onclick="goSub1();">ABOUT ME</a></li>
-					<li><a href="#" onclick="goSub2();">PORTFOLIO</a></li>
+					<li><a href="/goSub1.do">ABOUT ME</a></li>
+					<li><a href="/goSub2.do">PORTFOLIO</a></li>
 					<li><a href="">PORCESS</a></li>
 				</ul>
 				<div class="bars">
@@ -82,6 +66,5 @@
 		</div>
 	</div>
 </div>
-</form>
 </body>
 </html>
