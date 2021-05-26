@@ -27,7 +27,7 @@
 			$("#mainForm").attr("action", "/goSub1.do");
 			$("#mainForm").submit();
 		}
-		
+
 	</script>
 </head>
 
